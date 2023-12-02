@@ -1,39 +1,56 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[
+		{
+			"question": "Formula for Amplitude Modulation index is?",
+			"answers": {
+				"a": "Ma =2Vsin/Vtri",
+				"b": "Ma =Vtri/Vsin",
+				"c": "Ma =Vsin/Vtri",
+				"d": "Ma =2Vdc/Vsin"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": " Choose the correct statement.",
+			"answers": {
+				"a": "MOSFET is a unipolar, voltage controlled, two terminal device",
+				"b": "MOSFET is a bipolar, current controlled, three terminal device",
+				"c": "MOSFET is a unipolar, voltage controlled, three terminal device",
+				"d": "MOSFET is a bipolar, current controlled, two terminal device"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "In pulse width modulated inverters, the output voltage is controlled by controlling?",
+			"answers": {
+				"a": "Input frequency",
+				"b": "Modulating index",
+				"c": "Amplification factor",
+				"d": "None of the mentioned"
+			},
+			"correctAnswer": "b"
+		},
+		{
+			"question": "A VSI will have a better performance if its?",
+			"answers": {
+				"a": "load inductance is large and source inductance is small",
+				"b": "load inductance is small and source inductance is large",
+				"c": "both load inductance and source inductance are large",
+				"d": "both load inductance and source inductance are small"
+			},
+			"correctAnswer": "d"
+		},
+		{
+			"question": "PWM switching is used in voltage source inverters for the purpose of __________.",
+			"answers": {
+				"a": "Controlling output current",
+				"b": "Controlling output harmonics and output voltage",
+				"c": "Controlling input voltage",
+				"d": "None of the above"
+			},
+			"correctAnswer": "b"
+		}
+	]
+
+
+
+
