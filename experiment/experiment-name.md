@@ -1,1 +1,1 @@
-## Bipolar PWM Single Phase Inverter With RL Load
+## Bipolar PWM Single Phase Inverter with RL Load

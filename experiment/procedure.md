@@ -1,4 +1,3 @@
-## Procedure
 
 <div style="font-family: 'Nunito Sans', sans-serif; font-size: 16px;text-align: justify;">
 <b>STEP 1:</b> Drag and drop the components in the workspace to create the circuit.<br /><br />

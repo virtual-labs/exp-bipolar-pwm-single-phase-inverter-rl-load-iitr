@@ -1,6 +1,4 @@
-{
-    "version": 2.0,
-    "questions":[
+[
 		{
 			"question": "A full-bridge bipolar PWM inverter is fed from a 240 V battery and is driving an RL load. The fundamental output voltage for a modulation index of 0.8 is?",
 			"answers": {
@@ -52,4 +50,3 @@
 			"correctAnswer": "b"
 		}
 	]
-}
