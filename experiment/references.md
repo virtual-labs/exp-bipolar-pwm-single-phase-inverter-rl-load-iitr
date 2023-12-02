@@ -1,4 +1,3 @@
- ## References
 
 <div style="font-family: 'Nunito Sans', sans-serif; font-size: 17px;text-align: justify;"> 
 1. Daniel W. Hart, <i>"Power Electronics"</i>, McGraw Hill Education, 2011<br>
