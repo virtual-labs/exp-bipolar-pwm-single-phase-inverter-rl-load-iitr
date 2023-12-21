@@ -1,4 +1,12 @@
 
+<head>
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+  
+</script>
+
+</head>
+
 <div style="font-family: 'Nunito Sans', sans-serif; font-size: 20px;text-align: justify;">
 
 ### **Introduction**
@@ -38,17 +46,17 @@ It may be assumed that the control voltage V<sub>c</sub> during the cycle T<sub>
 
 <center>
 
-$V_{oav} = \frac {1}{T_s} \biggr[ \int_{t_1}^{T_s-t_1}-V_{DC} \, dt + \int_{T_s-t_1}^{T_s+t_1}V_{DC} dt \biggr].........(1)$
+$$V_{oav} = \frac {1}{T_s} \biggr[ \int_{t_1}^{T_s-t_1}-V_{DC} ~ dt + \int_{T_s-t_1}^{T_s+t_1}V_{DC} ~ dt \biggr].........(1)$$
 
 </center>
 
-Because in the interval  0 &le; t &le; $T_s$ : $V_{tr} = −V_{tM}+ (\frac {4V_{tM}}{T_s})t$, from the condition $V_{tr}(t1) = V_c$ 
+Because in the interval  0 &le; t &le; $T_s$ : $V_{tr} = −V_{tM}+ \left(\frac {4V_{tM}}{T_s}\right)t$, from the condition $V_{tr}(t1) = V_c$
 
 It follows that
 
 <center>
 
-$t_1 = \frac {T_s}{4} \biggr(1+ \frac {V_c}{V_{tM}} \biggr).......(2)$
+$$t_1 = \frac {T_s}{4} \biggr(1+ \frac {V_c}{V_{tM}} \biggr).......(2)$$
 
 </center>
 
@@ -56,27 +64,27 @@ From equation (1) and (2) it follows that<br>
 
 <center>
 
-$V_{oav} = \frac {V_{c}}{V_{tM}}V_{DC}.........(3)$
+$$V_{oav} = \frac {V_{c}}{V_{tM}}V_{DC}.........(3)$$
 
 </center>
 
-Here V<sub>tM</sub>is maximum value of triangular wave<br>
+Here V<sub>tM</sub> is maximum value of triangular wave<br>
 
 If 
 
 <center>
 
-$V_c = V_{cM} \, sin(\omega t).........(4)$
+$$V_c = V_{cM} \ sin(\omega t).........(4)$$
 
 </center>
 
-Here V<sub>cM</sub>is maximum value of carrier wave <br>
+Here V<sub>cM</sub> is maximum value of carrier wave <br>
 
 Then
 
 <center>
 
-$V_{oav} = \frac {V_{cM}}{V_{tM}}V_{DC} sin(\omega t) = m_aV_{DC} sin(\omega t).........(5)$
+$$V_{oav} = \frac {V_{cM}}{V_{tM}}V_{DC} ~ sin(\omega t) = m_a V_{DC} ~  sin(\omega t).........(5)$$
 
 </center>
 
@@ -84,11 +92,11 @@ Where,<br>
 
 <center>
 
-$m_a= \frac {V_{cM}}{V_{tM}} ..........(6)$
+$$m_a= \frac {V_{cM}}{V_{tM}} ..........(6)$$
 
 </center>
 
-Here $m_a$ is the factor of amplitude modulation, equal to the ratio of the sinusoidal control
+Here, $m_a$ is the factor of amplitude modulation, equal to the ratio of the sinusoidal control
 signal and the triangular carrier signal. On the basis of Equation (5) one can draw a very
 important conclusion that the average value of the output voltage is a sinusoidal
 function having the frequency of the control signals f<sub>1</sub> (dashed line in Fig. 4 (b))
@@ -96,7 +104,7 @@ and the amplitude
 
 <center>
 
-$V_{oM} = m_a V_{DC} \le V_{DC}..........(7)$
+$$V_{oM} = m_a V_{DC} \le V_{DC}..........(7)$$
 
 </center>
 
@@ -105,7 +113,7 @@ In addition to the factor of amplitude modulation we must remember the harmonics
 
 <center>
 
-$f_h = h.f_1 ..........(8)$
+$$f_h = h.f_1 ..........(8)$$
 
 </center>
 
@@ -117,28 +125,28 @@ As far as harmonic is concern
 
 <center>
 
-$h = (j.m_f \pm k)$
+$$h = (j.m_f \pm k)$$
 
 </center>
 
-where m<sub>f</sub> is an carrier ratio i.e.,
+Where m<sub>f</sub> is an carrier ratio i.e.,
 
 <center>
 
-$m_f = \frac {f_s}{f_1} ..........(9)$
+$$m_f = \frac {f_s}{f_1} ..........(9)$$
 
 </center>
 
-where f<sub>s</sub> is switching frequency and f<sub>1</sub> is fundamental frequency.<br>
-So
+Where f<sub>s</sub> is switching frequency and f<sub>1</sub> is fundamental frequency.<br>
+So,
 
 <center>
 
-$f_h = (j.m_f \pm k) f_1 ..........(10)$
+$$f_h = (j.m_f \pm k) f_1 ..........(10)$$
 
 </center>
 
-<b>Note:</b>For odd value of j, k will be even and for even value of j, k will be odd value.<br>
+<b>Note: </b>For odd value of j, k will be even and for even value of j, k will be odd value.<br>
 
 <center> <img src="images\Fig 5.png "style="height 200px; -webkit-filter:contrast(180%);" ></center>
 <center><b>Fig. 4 Voltage waveforms (a and b) and frequency spectrum of the inverter based on bipolar PWM (c)</b></center><br>
