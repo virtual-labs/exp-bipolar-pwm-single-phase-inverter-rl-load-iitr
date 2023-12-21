@@ -1,0 +1,545 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'IITR',
+        'phase': 'Testing',
+        'expName': 'BIPOLAR PWM SINGLE PHASE INVERTER WITH RL LOAD',
+        'expShortName': 'bipolar-pwm-single-phase-inverter-rl-load'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="bipolar-pwm-single-phase-inverter-rl-load">
+    	<meta name="developer-institute" content="IITR">
+    	<meta name="learning-unit" content="BIPOLAR PWM SINGLE PHASE INVERTER WITH RL LOAD">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="./assets/katex_assets/katex.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+            <div class="svc-rating-display">
+                <rating-display spreadsheetid="1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU" sheetname="Experiment-Database" columnname="Experiment Short Name" columnvalue="bipolar-pwm-single-phase-inverter-rl-load" imagesdirectory="./plugins/svc-rating/images/">
+                </rating-display>
+            </div>      <div class="svc-rating-submit">
+                <rating-submit title="Rate" this="" experiment="">
+                </rating-submit>
+            </div>      <bug-report id="bug-report" title="[BUG REPORT] BIPOLAR PWM SINGLE PHASE INVERTER WITH RL LOAD" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IITR&quot;,&quot;expname&quot;:&quot;BIPOLAR PWM SINGLE PHASE INVERTER WITH RL LOAD&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          	<a href="validator-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Validation Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="bipolar-pwm-single-phase-inverter-with-rl-load">Bipolar PWM Single Phase Inverter with RL Load</h2>
+          
+            </div>
+              
+          
+          <script type="text/javascript" async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+            
+          </script>
+          
+          
+          
+          <div style="font-family: 'Nunito Sans', sans-serif; font-size: 20px;text-align: justify;">
+          
+          <h3 id="introduction"><strong>Introduction</strong></h3>
+          <p>A bipolar PWM single-phase inverter is a type of power electronic device used to convert DC (direct current) power into AC (alternating current) power with a single-phase output. It utilizes a pulse width modulation (PWM) technique to control the switching of power semiconductor devices, typically insulated gate bipolar transistors (IGBTs) or MOSFETs (Metal-Oxide-Semiconductor Field-Effect Transistors).<br></p>
+          <center> <img src="images\Fig 1.png " style="height: 550px;" width="750px; -webkit-filter:contrast(220%);"></center>       
+          <center><b>Fig. 1 Bipolar PWM inverter circuit</b></center><br>
+          
+          <p>The bipolar PWM inverter produces an AC output waveform by switching the DC input voltage between positive and negative polarities. It generates the desired AC output voltage by varying the width of the pulses while maintaining a fixed frequency. By adjusting the pulse width, the inverter can regulate the amplitude of the output voltage, the operation of a bipolar PWM single-phase inverter involves dividing the input DC voltage into several voltage levels and then applying suitable pulse width modulation techniques to obtain the desired AC output waveform. This is achieved by comparing a reference sinusoidal waveform with a triangular waveform generated by a carrier signal. The inverter generates the necessary pulses to approximate the reference waveform based on the comparison.</p>
+          <h3 id="pulse-width-modulated-inverters"><strong>Pulse-Width Modulated Inverters</strong></h3>
+          <p>PWM Inverter uses PWM (Pulse Width Modulation) technique to control the output voltage of the inverter, this is done to fulfill the AC load requirements. In PWM inverter the controlled output is obtained by adjusting the ON and OFF period of the inverter components.
+          Pulse-width modulation is used in inverters for the purpose of regulating the amplitude and the frequency of the output voltage. In the inverter circuits, it is even more complex because it is required that one obtains approximately sinusoidal voltage of a preassigned frequency (usually 50 or 60 Hz) at its output.
+          The pulse-width-modulated (PWM) inverters use a harmonic control (modulating) signal, whereas the carrier signal is triangular.<br><br>
+           A PWM module consists of:<br>
+          • a sinusoidal oscillator with a frequency f<sub>1</sub> (normally 50 or 60 Hz) which generates the control signal.<br>
+          • a generator of triangular voltage (carrier signal) whose frequency fs is several times higher than f<sub>1.</sub><br>
+          • a comparator with complementary outputs as shown in Fig. 2.<br></p>
+          <p>The pulse frequency at the comparator output is equal to the frequency of the carrier signal f<sub>s</sub>, and the duration of the pulses depends on the ratio of the instantaneous values of the voltages of the control and carrier signals.
+          Since these pulses control the states of the inverter switches,
+          the switches will also operate at the frequency f<sub>s</sub> modulated by the ratio of the turn-on and the turn-off time. Consequently, it follows that</p>
+          <center> <img src="images\S1S2.png " style="height: 75px; -webkit-filter:contrast(180%);"></center>
+          
+          <p>Since the output voltage varies between +V<sub>DC</sub> and –V<sub>DC</sub> and vice-versa so the PWM technique are called bipolar modulators.
+          Because the frequency of the carrier signal is much higher than the frequency of the sinusoidal control signal, i.e., f<sub>s</sub> &gt;&gt; f<sub>1</sub>.</p>
+          <center><img src="images\Fig 3.png " align="center"></center>
+          <center><b>Fig. 2 Block diagram of a single-phase PWM inverter</b></center>
+          <center><img src="images\Fig 4.png " align="center" style="height: 350px; -webkit-filter:contrast(150%);"></center>
+          <center><b>Fig. 3 Waveforms of characteristic voltage in one period of carrier signal</b></center><br>
+          
+          <p>It may be assumed that the control voltage V<sub>c</sub> during the cycle T<sub>s</sub> is approximately constant. Then, based on Fig. 3, the average value of the output voltage is<br></p>
+          <center>
+          
+          <p>$$V_{oav} = \frac {1}{T_s} \biggr[ \int_{t_1}^{T_s-t_1}-V_{DC} ~ dt + \int_{T_s-t_1}^{T_s+t_1}V_{DC} ~ dt \biggr].........(1)$$</p>
+          </center>
+          
+          <p>Because in the interval  0 ≤ t ≤ $T_s$ : $V_{tr} = −V_{tM}+ \left(\frac {4V_{tM}}{T_s}\right)t$, from the condition $V_{tr}(t1) = V_c$</p>
+          <p>It follows that</p>
+          <center>
+          
+          <p>$$t_1 = \frac {T_s}{4} \biggr(1+ \frac {V_c}{V_{tM}} \biggr).......(2)$$</p>
+          </center>
+          
+          <p>From equation (1) and (2) it follows that<br></p>
+          <center>
+          
+          <p>$$V_{oav} = \frac {V_{c}}{V_{tM}}V_{DC}.........(3)$$</p>
+          </center>
+          
+          <p>Here V<sub>tM</sub> is maximum value of triangular wave<br></p>
+          <p>If </p>
+          <center>
+          
+          <p>$$V_c = V_{cM} \ sin(\omega t).........(4)$$</p>
+          </center>
+          
+          <p>Here V<sub>cM</sub> is maximum value of carrier wave <br></p>
+          <p>Then</p>
+          <center>
+          
+          <p>$$V_{oav} = \frac {V_{cM}}{V_{tM}}V_{DC} ~ sin(\omega t) = m_a V_{DC} ~  sin(\omega t).........(5)$$</p>
+          </center>
+          
+          <p>Where,<br></p>
+          <center>
+          
+          <p>$$m_a= \frac {V_{cM}}{V_{tM}} ..........(6)$$</p>
+          </center>
+          
+          <p>Here, $m_a$ is the factor of amplitude modulation, equal to the ratio of the sinusoidal control
+          signal and the triangular carrier signal. On the basis of Equation (5) one can draw a very
+          important conclusion that the average value of the output voltage is a sinusoidal
+          function having the frequency of the control signals f<sub>1</sub> (dashed line in Fig. 4 (b))
+          and the amplitude</p>
+          <center>
+          
+          <p>$$V_{oM} = m_a V_{DC} \le V_{DC}..........(7)$$</p>
+          </center>
+          
+          <p>because the amplitude modulation factor $m_a$ &lt; 1.<br><br>
+          In addition to the factor of amplitude modulation we must remember the harmonics frequency is given by</p>
+          <center>
+          
+          <p>$$f_h = h.f_1 ..........(8)$$</p>
+          </center>
+          
+          <p>Where f<sub>h</sub> is harmonic frequency, f<sub>1</sub> is fundamental frequency<br></p>
+          <p>Here h = 3, 5, 7, 9..........<br></p>
+          <p>As far as harmonic is concern</p>
+          <center>
+          
+          <p>$$h = (j.m_f \pm k)$$</p>
+          </center>
+          
+          <p>Where m<sub>f</sub> is an carrier ratio i.e.,</p>
+          <center>
+          
+          <p>$$m_f = \frac {f_s}{f_1} ..........(9)$$</p>
+          </center>
+          
+          <p>Where f<sub>s</sub> is switching frequency and f<sub>1</sub> is fundamental frequency.<br>
+          So,</p>
+          <center>
+          
+          <p>$$f_h = (j.m_f \pm k) f_1 ..........(10)$$</p>
+          </center>
+          
+          <p><b>Note: </b>For odd value of j, k will be even and for even value of j, k will be odd value.<br></p>
+          <center> <img src="images\Fig 5.png " style="height 200px; -webkit-filter:contrast(180%);"></center>
+          <center><b>Fig. 4 Voltage waveforms (a and b) and frequency spectrum of the inverter based on bipolar PWM (c)</b></center><br>
+          
+          <p>Even though mf &gt;&gt; 1, the control signal is not constant within one cycle T<sub>s</sub>. For
+          this reason the output voltage will contain higher harmonics, whereas (5) gives
+          its fundamental harmonic. The higher harmonics appear around the carrier frequency as shown in Fig. 4(c) and its integer multiples, more precisely around the harmonics mf, 2mf, 3mf, … For instance, if mf = 15, harmonics 15, 17, 13, …, 31, 33, 29, etc. will exist.</p>
+          <h3 id="advantages-of-bipolar-pwm-single-phase-inverter"><strong>Advantages of Bipolar PWM single-phase inverter</strong></h3>
+          <ol>
+          <li>   <strong>Better voltage waveform quality:</strong> The PWM technique allows for precise control of the output voltage waveform, resulting in lower harmonic distortion and better overall waveform quality.<br></li>
+          <li>   <strong>Improved efficiency:</strong> The use of power semiconductor devices with low conduction and switching losses, such as IGBTs or MOSFETs, helps in achieving higher efficiency.<br></li>
+          <li>   <strong>Enhanced voltage regulation:</strong> The pulse width modulation technique enables effective voltage regulation, allowing the inverter to maintain a stable output voltage despite changes in load conditions.<br></li>
+          <li>   <strong>Flexibility:</strong> Bipolar PWM single-phase inverters can be used in a variety of applications, including motor drives, renewable energy systems, uninterruptible power supplies (UPS), and more.</li>
+          </ol>
+          <h3 id="disadvantages-of-bipolar-pwm-single-phase-inverter"><strong>Disadvantages of Bipolar PWM single-phase inverter</strong></h3>
+          <ol>
+          <li><strong>Increased harmonic content:</strong> Bipolar PWM techniques generate more harmonic distortion compared to other PWM techniques. <br></li>
+          <li>   <strong>Higher switching losses:</strong> Bipolar PWM requires switching between positive and negative half-cycles of the output waveform. This introduces additional switching losses compared to unipolar PWM, where switching occurs only in one polarity.<br></li>
+          <li>   <strong>Complex control circuitry:</strong> Bipolar PWM inverters typically require more complex control circuitry compared to unipolar PWM inverters. <br></li>
+          <li>   <strong>Increased voltage stress on components:</strong> The rapid switching between positive and negative voltages can lead to increased voltage spikes and transients, which can degrade the reliability and lifespan of the components.</li>
+          </ol>
+          <h3 id="applications-of-bipolar-pwm-single-phase-inverter"><strong>Applications of Bipolar PWM single-phase inverter</strong></h3>
+          <ol>
+          <li>Bipolar PWM inverters are extensively used in motor drives for controlling the speed and torque of electric motors.<br></li>
+          <li>Bipolar PWM inverters play a crucial role in renewable energy systems such as solar power and wind power. They convert the DC power generated by solar panels or wind turbines into AC power suitable for grid integration or powering local loads.<br></li>
+          <li>UPS systems are used to provide backup power during utility power outages. Bipolar PWM inverters are employed in UPS systems to convert DC power from batteries into AC power to supply critical loads.<br></li>
+          <li>Bipolar PWM inverters are used in power factor correction circuits to improve the power quality in electrical systems. By controlling the switching frequency and duty  cycle of the PWM signals, the inverter can shape the input current waveform, reducing harmonics and improving the overall power factor.<br></li>
+          <li>Bipolar PWM inverters are employed in EV charging stations to convert AC power from the grid into DC power for charging the vehicle's battery.</li>
+          </ol>
+          </div>
+          </div>
+          <div class="bug-report-mobile">
+              <bug-report id="bug-report" title="[BUG REPORT] BIPOLAR PWM SINGLE PHASE INVERTER WITH RL LOAD" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IITR&quot;,&quot;expname&quot;:&quot;BIPOLAR PWM SINGLE PHASE INVERTER WITH RL LOAD&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,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);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);">
+              </bug-report>
+          </div>        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fa fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fa fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fa fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fa fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script src="./assets/js/toggleSidebar.js"></script>
+    <script src="./assets/js/event-handler.js"></script>
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  
+
+<script type="module" src="https://virtual-labs.github.io/svc-bug-report/client/src/bug-report.js"></script><script type="module" src="plugins/svc-rating/index.js"></script><script type="module" src="plugins/svc-rating/config.js"></script><script type="module" src="https://apis.google.com/js/api.js"></script></body></html>

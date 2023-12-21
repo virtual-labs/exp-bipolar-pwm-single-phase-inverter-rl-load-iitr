@@ -1,0 +1,52 @@
+[
+		{
+			"question": "A full-bridge bipolar PWM inverter is fed from a 240 V battery and is driving an RL load. The fundamental output voltage for a modulation index of 0.8 is?",
+			"answers": {
+				"a": "190 V",
+				"b": "110 V",
+				"c": "215 V",
+				"d": "135 V"
+			},
+			"correctAnswer": "d"
+		},
+		{
+			"question": "In a PWM inverter, if the frequency of the 3rd harmonic is 180 Hz, then the frequency of the fundamental component would be ___________.",
+			"answers": {
+				"a": "60 Hz",
+				"b": "50 Hz",
+				"c": "90 Hz",
+				"d": "120 Hz"
+			},
+			"correctAnswer": "a"
+		},
+		{
+			"question": "A single-phase bridge inverter, fed from a 230 V dc is connected to the load R = 10 Ω and L = 0.03 H. Fundamental output frequency of the square wave output is 50 Hz. Find the fundamental component of rms output current?",
+			"answers": {
+				"a": "30 A",
+				"b": "2.5 A",
+				"c": "15 A",
+				"d": "18.8 A"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "In sinusoidal pulse width modulation __________ wave is compared with a ___________ type of wave.",
+			"answers": {
+				"a": "sinusoidal, square",
+				"b": "square, sinusoidal",
+				"c": "sinusoidal, triangular",
+				"d": "none of the above"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "In pulse width modulation",
+			"answers": {
+				"a": "the output voltage is modulated",
+				"b": "the gating pulses are modulated",
+				"c": "the input voltage is modulated",
+				"d": "none of the above"
+			},
+			"correctAnswer": "b"
+		}
+	]
